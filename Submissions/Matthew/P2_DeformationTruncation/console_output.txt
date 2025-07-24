@@ -1,0 +1,781 @@
+Warp DeprecationWarning: The `warp.sim` module is deprecated and will be removed in v1.10. Please transition to using the forthcoming Newton library instead.
+=== Time step 0700 ===
+Warp 1.8.0 initialized:
+   CUDA Toolkit 12.8, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 4070 Ti SUPER" (16 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /home/matthew/.cache/warp/1.8.0
+Module warp.sim.collide 3b78b77 load on device 'cuda:0' took 12.14 ms  (cached)
+Module warp.sim.integrator_vbd 715ddb2 load on device 'cpu' took 1.23 ms  (cached)
+Module compute_conservative_bounds e812776 load on device 'cuda:0' took 0.32 ms  (cached)
+  → conservative bounds: min=0.6964, max=1.7002
+    iter 0: warm‐start from step_0700_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0700_optimized_shape.ply
+=== Time step 0710 ===
+  → conservative bounds: min=0.2910, max=1.6998
+    iter 0: warm‐start from step_0710_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0710_optimized_shape.ply
+=== Time step 0720 ===
+  → conservative bounds: min=0.1874, max=1.6985
+    iter 0: warm‐start from step_0720_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0720_optimized_shape.ply
+=== Time step 0730 ===
+  → conservative bounds: min=0.1903, max=1.6997
+    iter 0: warm‐start from step_0730_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0730_optimized_shape.ply
+=== Time step 0740 ===
+  → conservative bounds: min=0.1933, max=1.6989
+    iter 0: warm‐start from step_0740_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0740_optimized_shape.ply
+=== Time step 0750 ===
+  → conservative bounds: min=0.1912, max=1.6984
+    iter 0: warm‐start from step_0750_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0750_optimized_shape.ply
+=== Time step 0760 ===
+  → conservative bounds: min=0.1910, max=1.6987
+    iter 0: warm‐start from step_0760_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0760_optimized_shape.ply
+=== Time step 0770 ===
+  → conservative bounds: min=0.1801, max=1.6990
+    iter 0: warm‐start from step_0770_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0770_optimized_shape.ply
+=== Time step 0780 ===
+  → conservative bounds: min=0.1911, max=1.6984
+    iter 0: warm‐start from step_0780_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0780_optimized_shape.ply
+=== Time step 0790 ===
+  → conservative bounds: min=0.1912, max=1.6988
+    iter 0: warm‐start from step_0790_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0790_optimized_shape.ply
+=== Time step 0800 ===
+  → conservative bounds: min=0.1845, max=1.6983
+    iter 0: warm‐start from step_0800_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0800_optimized_shape.ply
+=== Time step 0810 ===
+  → conservative bounds: min=0.1821, max=1.6988
+    iter 0: warm‐start from step_0810_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0810_optimized_shape.ply
+=== Time step 0820 ===
+  → conservative bounds: min=0.1645, max=1.6990
+    iter 0: warm‐start from step_0820_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0820_optimized_shape.ply
+=== Time step 0830 ===
+  → conservative bounds: min=0.1600, max=1.6990
+    iter 0: warm‐start from step_0830_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0830_optimized_shape.ply
+=== Time step 0840 ===
+  → conservative bounds: min=0.1489, max=1.6992
+    iter 0: warm‐start from step_0840_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0840_optimized_shape.ply
+=== Time step 0850 ===
+  → conservative bounds: min=0.1413, max=1.6992
+    iter 0: warm‐start from step_0850_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0850_optimized_shape.ply
+=== Time step 0860 ===
+  → conservative bounds: min=0.0670, max=1.6996
+    iter 0: warm‐start from step_0860_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0860_optimized_shape.ply
+=== Time step 0870 ===
+  → conservative bounds: min=0.0524, max=1.6990
+    iter 0: warm‐start from step_0870_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0870_optimized_shape.ply
+=== Time step 0880 ===
+  → conservative bounds: min=0.0421, max=1.6997
+    iter 0: warm‐start from step_0880_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0880_optimized_shape.ply
+=== Time step 0890 ===
+  → conservative bounds: min=0.0299, max=1.6997
+    iter 0: warm‐start from step_0890_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0890_optimized_shape.ply
+=== Time step 0900 ===
+  → conservative bounds: min=0.0294, max=1.6993
+    iter 0: warm‐start from step_0900_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0900_optimized_shape.ply
+=== Time step 0910 ===
+  → conservative bounds: min=0.0261, max=1.6990
+    iter 0: warm‐start from step_0910_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0910_optimized_shape.ply
+=== Time step 0920 ===
+  → conservative bounds: min=0.0270, max=1.6997
+    iter 0: warm‐start from step_0920_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0920_optimized_shape.ply
+=== Time step 0930 ===
+  → conservative bounds: min=0.0271, max=1.6993
+    iter 0: warm‐start from step_0930_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0930_optimized_shape.ply
+=== Time step 0940 ===
+  → conservative bounds: min=0.0283, max=1.7001
+    iter 0: warm‐start from step_0940_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0940_optimized_shape.ply
+=== Time step 0950 ===
+  → conservative bounds: min=0.0236, max=1.6989
+    iter 0: warm‐start from step_0950_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0950_optimized_shape.ply
+=== Time step 0960 ===
+  → conservative bounds: min=0.0263, max=1.6984
+    iter 0: warm‐start from step_0960_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0960_optimized_shape.ply
+=== Time step 0970 ===
+  → conservative bounds: min=0.0258, max=1.6988
+    iter 0: warm‐start from step_0970_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0970_optimized_shape.ply
+=== Time step 0980 ===
+  → conservative bounds: min=0.0177, max=1.6992
+    iter 0: warm‐start from step_0980_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0980_optimized_shape.ply
+=== Time step 0990 ===
+  → conservative bounds: min=0.0165, max=1.6998
+    iter 0: warm‐start from step_0990_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_0990_optimized_shape.ply
+=== Time step 1000 ===
+  → conservative bounds: min=0.0001, max=1.6998
+    iter 0: warm‐start from step_1000_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1000_optimized_shape.ply
+=== Time step 1010 ===
+  → conservative bounds: min=0.0152, max=1.6994
+    iter 0: warm‐start from step_1010_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1010_optimized_shape.ply
+=== Time step 1020 ===
+  → conservative bounds: min=0.0118, max=1.6992
+    iter 0: warm‐start from step_1020_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1020_optimized_shape.ply
+=== Time step 1030 ===
+  → conservative bounds: min=0.0101, max=1.6993
+    iter 0: warm‐start from step_1030_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1030_optimized_shape.ply
+=== Time step 1040 ===
+  → conservative bounds: min=0.0097, max=1.6991
+    iter 0: warm‐start from step_1040_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1040_optimized_shape.ply
+=== Time step 1050 ===
+  → conservative bounds: min=0.0095, max=1.6996
+    iter 0: warm‐start from step_1050_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1050_optimized_shape.ply
+=== Time step 1060 ===
+  → conservative bounds: min=0.0019, max=1.6991
+    iter 0: warm‐start from step_1060_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1060_optimized_shape.ply
+=== Time step 1070 ===
+  → conservative bounds: min=0.0077, max=1.6993
+    iter 0: warm‐start from step_1070_iter_00_displacement.npy
+    iter 1: warm‐start from step_1070_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1070_optimized_shape.ply
+=== Time step 1080 ===
+  → conservative bounds: min=0.0070, max=1.6996
+    iter 0: warm‐start from step_1080_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1080_optimized_shape.ply
+=== Time step 1090 ===
+  → conservative bounds: min=0.0064, max=1.6992
+    iter 0: warm‐start from step_1090_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1090_optimized_shape.ply
+=== Time step 1100 ===
+  → conservative bounds: min=0.0056, max=1.6992
+    iter 0: warm‐start from step_1100_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1100_optimized_shape.ply
+=== Time step 1110 ===
+  → conservative bounds: min=0.0051, max=1.6993
+    iter 0: warm‐start from step_1110_iter_00_displacement.npy
+    iter 1: warm‐start from step_1110_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1110_optimized_shape.ply
+=== Time step 1120 ===
+  → conservative bounds: min=0.0051, max=1.6996
+    iter 0: warm‐start from step_1120_iter_00_displacement.npy
+    iter 1: warm‐start from step_1120_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1120_optimized_shape.ply
+=== Time step 1130 ===
+  → conservative bounds: min=0.0045, max=1.6990
+    iter 0: warm‐start from step_1130_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1130_optimized_shape.ply
+=== Time step 1140 ===
+  → conservative bounds: min=0.0047, max=1.6994
+    iter 0: warm‐start from step_1140_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1140_optimized_shape.ply
+=== Time step 1150 ===
+  → conservative bounds: min=0.0008, max=1.6996
+    iter 0: warm‐start from step_1150_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1150_optimized_shape.ply
+=== Time step 1160 ===
+  → conservative bounds: min=0.0042, max=1.6992
+    iter 0: warm‐start from step_1160_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1160_optimized_shape.ply
+=== Time step 1170 ===
+  → conservative bounds: min=0.0044, max=1.6994
+    iter 0: warm‐start from step_1170_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1170_optimized_shape.ply
+=== Time step 1180 ===
+  → conservative bounds: min=0.0015, max=1.6991
+    iter 0: warm‐start from step_1180_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1180_optimized_shape.ply
+=== Time step 1190 ===
+  → conservative bounds: min=0.0042, max=1.6995
+    iter 0: warm‐start from step_1190_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1190_optimized_shape.ply
+=== Time step 1200 ===
+  → conservative bounds: min=0.0007, max=1.6997
+    iter 0: warm‐start from step_1200_iter_00_displacement.npy
+    iter 1: warm‐start from step_1200_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1200_optimized_shape.ply
+=== Time step 1210 ===
+  → conservative bounds: min=0.0027, max=1.7004
+    iter 0: warm‐start from step_1210_iter_00_displacement.npy
+    iter 1: warm‐start from step_1210_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1210_optimized_shape.ply
+=== Time step 1220 ===
+  → conservative bounds: min=0.0049, max=1.7003
+    iter 0: warm‐start from step_1220_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1220_optimized_shape.ply
+=== Time step 1230 ===
+  → conservative bounds: min=0.0058, max=1.6992
+    iter 0: warm‐start from step_1230_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1230_optimized_shape.ply
+=== Time step 1240 ===
+  → conservative bounds: min=0.0002, max=1.6995
+    iter 0: warm‐start from step_1240_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1240_optimized_shape.ply
+=== Time step 1250 ===
+  → conservative bounds: min=0.0078, max=1.6992
+    iter 0: warm‐start from step_1250_iter_00_displacement.npy
+    iter 1: warm‐start from step_1250_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1250_optimized_shape.ply
+=== Time step 1260 ===
+  → conservative bounds: min=0.0065, max=1.6991
+    iter 0: warm‐start from step_1260_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1260_optimized_shape.ply
+=== Time step 1270 ===
+  → conservative bounds: min=0.0049, max=1.6993
+    iter 0: warm‐start from step_1270_iter_00_displacement.npy
+    iter 1: warm‐start from step_1270_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1270_optimized_shape.ply
+=== Time step 1280 ===
+  → conservative bounds: min=0.0094, max=1.6994
+    iter 0: warm‐start from step_1280_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1280_optimized_shape.ply
+=== Time step 1290 ===
+  → conservative bounds: min=0.0095, max=1.6994
+    iter 0: warm‐start from step_1290_iter_00_displacement.npy
+    iter 1: warm‐start from step_1290_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1290_optimized_shape.ply
+=== Time step 1300 ===
+  → conservative bounds: min=0.0092, max=1.6996
+    iter 0: warm‐start from step_1300_iter_00_displacement.npy
+    iter 1: warm‐start from step_1300_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1300_optimized_shape.ply
+=== Time step 1310 ===
+  → conservative bounds: min=0.0053, max=1.6998
+    iter 0: warm‐start from step_1310_iter_00_displacement.npy
+    iter 1: warm‐start from step_1310_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1310_optimized_shape.ply
+=== Time step 1320 ===
+  → conservative bounds: min=0.0002, max=1.6997
+    iter 0: warm‐start from step_1320_iter_00_displacement.npy
+    iter 1: warm‐start from step_1320_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1320_optimized_shape.ply
+=== Time step 1330 ===
+  → conservative bounds: min=0.0075, max=1.6995
+    iter 0: warm‐start from step_1330_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1330_optimized_shape.ply
+=== Time step 1340 ===
+  → conservative bounds: min=0.0001, max=1.6994
+    iter 0: warm‐start from step_1340_iter_00_displacement.npy
+    iter 1: warm‐start from step_1340_iter_01_displacement.npy
+    iter 2: warm‐start from step_1340_iter_02_displacement.npy
+    iter 3: warm‐start from step_1340_iter_03_displacement.npy
+    iter 4: grad‐step ‖Δx‖=9.446e-02
+    iter 5: grad‐step ‖Δx‖=5.341e-02
+    iter 6: grad‐step ‖Δx‖=1.290e-02
+    iter 7: grad‐step ‖Δx‖=2.228e-02
+    iter 8: grad‐step ‖Δx‖=1.291e-02
+    iter 9: grad‐step ‖Δx‖=8.635e-03
+    iter 10: grad‐step ‖Δx‖=6.166e-03
+    iter 11: grad‐step ‖Δx‖=5.169e-03
+    iter 12: grad‐step ‖Δx‖=6.638e-03
+    iter 13: grad‐step ‖Δx‖=4.865e-03
+    iter 14: grad‐step ‖Δx‖=4.156e-03
+    iter 15: grad‐step ‖Δx‖=5.445e-03
+    iter 16: grad‐step ‖Δx‖=4.032e-03
+    iter 17: grad‐step ‖Δx‖=3.503e-03
+    iter 18: grad‐step ‖Δx‖=4.632e-03
+    iter 19: grad‐step ‖Δx‖=3.449e-03
+  reached max iterations (20)
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1340_optimized_shape.ply
+=== Time step 1350 ===
+  → conservative bounds: min=0.0085, max=1.6990
+    iter 0: warm‐start from step_1350_iter_00_displacement.npy
+    iter 1: warm‐start from step_1350_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1350_optimized_shape.ply
+=== Time step 1360 ===
+  → conservative bounds: min=0.0002, max=1.6986
+    iter 0: warm‐start from step_1360_iter_00_displacement.npy
+    iter 1: warm‐start from step_1360_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1360_optimized_shape.ply
+=== Time step 1370 ===
+  → conservative bounds: min=0.0015, max=1.6993
+    iter 0: warm‐start from step_1370_iter_00_displacement.npy
+    iter 1: warm‐start from step_1370_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1370_optimized_shape.ply
+=== Time step 1380 ===
+  → conservative bounds: min=0.0004, max=1.6992
+    iter 0: warm‐start from step_1380_iter_00_displacement.npy
+    iter 1: warm‐start from step_1380_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1380_optimized_shape.ply
+=== Time step 1390 ===
+  → conservative bounds: min=0.0080, max=1.6996
+    iter 0: warm‐start from step_1390_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1390_optimized_shape.ply
+=== Time step 1400 ===
+  → conservative bounds: min=0.0001, max=1.7000
+    iter 0: warm‐start from step_1400_iter_00_displacement.npy
+    iter 1: warm‐start from step_1400_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1400_optimized_shape.ply
+=== Time step 1410 ===
+  → conservative bounds: min=0.0067, max=1.7002
+    iter 0: warm‐start from step_1410_iter_00_displacement.npy
+    iter 1: warm‐start from step_1410_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1410_optimized_shape.ply
+=== Time step 1420 ===
+  → conservative bounds: min=0.0011, max=1.6988
+    iter 0: warm‐start from step_1420_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1420_optimized_shape.ply
+=== Time step 1430 ===
+  → conservative bounds: min=0.0073, max=1.6987
+    iter 0: warm‐start from step_1430_iter_00_displacement.npy
+    iter 1: warm‐start from step_1430_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1430_optimized_shape.ply
+=== Time step 1440 ===
+  → conservative bounds: min=0.0065, max=1.6991
+    iter 0: warm‐start from step_1440_iter_00_displacement.npy
+    iter 1: warm‐start from step_1440_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1440_optimized_shape.ply
+=== Time step 1450 ===
+  → conservative bounds: min=0.0003, max=1.6996
+    iter 0: warm‐start from step_1450_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1450_optimized_shape.ply
+=== Time step 1460 ===
+  → conservative bounds: min=0.0046, max=1.6993
+    iter 0: warm‐start from step_1460_iter_00_displacement.npy
+    iter 1: warm‐start from step_1460_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1460_optimized_shape.ply
+=== Time step 1470 ===
+  → conservative bounds: min=0.0001, max=1.6993
+    iter 0: warm‐start from step_1470_iter_00_displacement.npy
+    iter 1: warm‐start from step_1470_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1470_optimized_shape.ply
+=== Time step 1480 ===
+  → conservative bounds: min=0.0066, max=1.6998
+    iter 0: warm‐start from step_1480_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1480_optimized_shape.ply
+=== Time step 1490 ===
+  → conservative bounds: min=0.0001, max=1.6999
+    iter 0: warm‐start from step_1490_iter_00_displacement.npy
+    iter 1: warm‐start from step_1490_iter_01_displacement.npy
+    iter 2: warm‐start from step_1490_iter_02_displacement.npy
+    iter 3: warm‐start from step_1490_iter_03_displacement.npy
+    iter 4: grad‐step ‖Δx‖=6.678e-02
+    iter 5: grad‐step ‖Δx‖=3.622e-02
+    iter 6: grad‐step ‖Δx‖=1.692e-02
+    iter 7: grad‐step ‖Δx‖=1.040e-02
+    iter 8: grad‐step ‖Δx‖=7.764e-03
+    iter 9: grad‐step ‖Δx‖=8.875e-03
+    iter 10: grad‐step ‖Δx‖=6.118e-03
+    iter 11: grad‐step ‖Δx‖=5.026e-03
+    iter 12: grad‐step ‖Δx‖=6.217e-03
+    iter 13: grad‐step ‖Δx‖=4.457e-03
+    iter 14: grad‐step ‖Δx‖=3.894e-03
+    iter 15: grad‐step ‖Δx‖=4.997e-03
+    iter 16: grad‐step ‖Δx‖=3.677e-03
+    iter 17: grad‐step ‖Δx‖=3.278e-03
+    iter 18: grad‐step ‖Δx‖=4.336e-03
+    iter 19: grad‐step ‖Δx‖=3.261e-03
+  reached max iterations (20)
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1490_optimized_shape.ply
+=== Time step 1500 ===
+  → conservative bounds: min=0.0062, max=1.6995
+    iter 0: warm‐start from step_1500_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1500_optimized_shape.ply
+=== Time step 1510 ===
+  → conservative bounds: min=0.0003, max=1.6992
+    iter 0: warm‐start from step_1510_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1510_optimized_shape.ply
+=== Time step 1520 ===
+  → conservative bounds: min=0.0050, max=1.6996
+    iter 0: warm‐start from step_1520_iter_00_displacement.npy
+    iter 1: warm‐start from step_1520_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1520_optimized_shape.ply
+=== Time step 1530 ===
+  → conservative bounds: min=0.0051, max=1.6988
+    iter 0: warm‐start from step_1530_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1530_optimized_shape.ply
+=== Time step 1540 ===
+  → conservative bounds: min=0.0001, max=1.6987
+    iter 0: warm‐start from step_1540_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1540_optimized_shape.ply
+=== Time step 1550 ===
+  → conservative bounds: min=0.0002, max=1.6990
+    iter 0: warm‐start from step_1550_iter_00_displacement.npy
+    iter 1: warm‐start from step_1550_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1550_optimized_shape.ply
+=== Time step 1560 ===
+  → conservative bounds: min=0.0002, max=1.6991
+    iter 0: warm‐start from step_1560_iter_00_displacement.npy
+    iter 1: warm‐start from step_1560_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1560_optimized_shape.ply
+=== Time step 1570 ===
+  → conservative bounds: min=0.0001, max=1.6997
+    iter 0: warm‐start from step_1570_iter_00_displacement.npy
+    iter 1: warm‐start from step_1570_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1570_optimized_shape.ply
+=== Time step 1580 ===
+  → conservative bounds: min=0.0062, max=1.6995
+    iter 0: warm‐start from step_1580_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1580_optimized_shape.ply
+=== Time step 1590 ===
+  → conservative bounds: min=0.0052, max=1.6995
+    iter 0: warm‐start from step_1590_iter_00_displacement.npy
+    iter 1: warm‐start from step_1590_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1590_optimized_shape.ply
+=== Time step 1600 ===
+  → conservative bounds: min=0.0008, max=1.6999
+    iter 0: warm‐start from step_1600_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1600_optimized_shape.ply
+=== Time step 1610 ===
+  → conservative bounds: min=0.0053, max=1.6998
+    iter 0: warm‐start from step_1610_iter_00_displacement.npy
+    iter 1: warm‐start from step_1610_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1610_optimized_shape.ply
+=== Time step 1620 ===
+  → conservative bounds: min=0.0002, max=1.6999
+    iter 0: warm‐start from step_1620_iter_00_displacement.npy
+    iter 1: warm‐start from step_1620_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1620_optimized_shape.ply
+=== Time step 1630 ===
+  → conservative bounds: min=0.0054, max=1.6996
+    iter 0: warm‐start from step_1630_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1630_optimized_shape.ply
+=== Time step 1640 ===
+  → conservative bounds: min=0.0001, max=1.6995
+    iter 0: warm‐start from step_1640_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1640_optimized_shape.ply
+=== Time step 1650 ===
+  → conservative bounds: min=0.0004, max=1.6994
+    iter 0: warm‐start from step_1650_iter_00_displacement.npy
+    iter 1: warm‐start from step_1650_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1650_optimized_shape.ply
+=== Time step 1660 ===
+  → conservative bounds: min=0.0020, max=1.6993
+    iter 0: warm‐start from step_1660_iter_00_displacement.npy
+    iter 1: warm‐start from step_1660_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1660_optimized_shape.ply
+=== Time step 1670 ===
+  → conservative bounds: min=0.0004, max=1.6994
+    iter 0: warm‐start from step_1670_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1670_optimized_shape.ply
+=== Time step 1680 ===
+  → conservative bounds: min=0.0001, max=1.6999
+    iter 0: warm‐start from step_1680_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1680_optimized_shape.ply
+=== Time step 1690 ===
+  → conservative bounds: min=0.0005, max=1.6993
+    iter 0: warm‐start from step_1690_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1690_optimized_shape.ply
+=== Time step 1700 ===
+  → conservative bounds: min=0.0002, max=1.6993
+    iter 0: warm‐start from step_1700_iter_00_displacement.npy
+    iter 1: warm‐start from step_1700_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1700_optimized_shape.ply
+=== Time step 1710 ===
+  → conservative bounds: min=0.0002, max=1.6991
+    iter 0: warm‐start from step_1710_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1710_optimized_shape.ply
+=== Time step 1720 ===
+  → conservative bounds: min=0.0003, max=1.6996
+    iter 0: warm‐start from step_1720_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1720_optimized_shape.ply
+=== Time step 1730 ===
+  → conservative bounds: min=0.0040, max=1.6994
+    iter 0: warm‐start from step_1730_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1730_optimized_shape.ply
+=== Time step 1740 ===
+  → conservative bounds: min=0.0009, max=1.6995
+    iter 0: warm‐start from step_1740_iter_00_displacement.npy
+    iter 1: warm‐start from step_1740_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1740_optimized_shape.ply
+=== Time step 1750 ===
+  → conservative bounds: min=0.0004, max=1.6993
+    iter 0: warm‐start from step_1750_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1750_optimized_shape.ply
+=== Time step 1760 ===
+  → conservative bounds: min=0.0006, max=1.6997
+    iter 0: warm‐start from step_1760_iter_00_displacement.npy
+    iter 1: warm‐start from step_1760_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1760_optimized_shape.ply
+=== Time step 1770 ===
+  → conservative bounds: min=0.0044, max=1.6995
+    iter 0: warm‐start from step_1770_iter_00_displacement.npy
+    iter 1: warm‐start from step_1770_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1770_optimized_shape.ply
+=== Time step 1780 ===
+  → conservative bounds: min=0.0004, max=1.6998
+    iter 0: warm‐start from step_1780_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1780_optimized_shape.ply
+=== Time step 1790 ===
+  → conservative bounds: min=0.0010, max=1.6999
+    iter 0: warm‐start from step_1790_iter_00_displacement.npy
+    iter 1: warm‐start from step_1790_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1790_optimized_shape.ply
+=== Time step 1800 ===
+  → conservative bounds: min=0.0040, max=1.6999
+    iter 0: warm‐start from step_1800_iter_00_displacement.npy
+    iter 1: warm‐start from step_1800_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1800_optimized_shape.ply
+=== Time step 1810 ===
+  → conservative bounds: min=0.0003, max=1.6999
+    iter 0: warm‐start from step_1810_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1810_optimized_shape.ply
+=== Time step 1820 ===
+  → conservative bounds: min=0.0031, max=1.6998
+    iter 0: warm‐start from step_1820_iter_00_displacement.npy
+    iter 1: warm‐start from step_1820_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1820_optimized_shape.ply
+=== Time step 1830 ===
+  → conservative bounds: min=0.0001, max=1.7001
+    iter 0: warm‐start from step_1830_iter_00_displacement.npy
+    iter 1: warm‐start from step_1830_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1830_optimized_shape.ply
+=== Time step 1840 ===
+  → conservative bounds: min=0.0004, max=1.7001
+    iter 0: warm‐start from step_1840_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1840_optimized_shape.ply
+=== Time step 1850 ===
+  → conservative bounds: min=0.0008, max=1.7005
+    iter 0: warm‐start from step_1850_iter_00_displacement.npy
+    iter 1: warm‐start from step_1850_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1850_optimized_shape.ply
+=== Time step 1860 ===
+  → conservative bounds: min=0.0040, max=1.7002
+    iter 0: warm‐start from step_1860_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1860_optimized_shape.ply
+=== Time step 1870 ===
+  → conservative bounds: min=0.0035, max=1.7000
+    iter 0: warm‐start from step_1870_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1870_optimized_shape.ply
+=== Time step 1880 ===
+  → conservative bounds: min=0.0004, max=1.6999
+    iter 0: warm‐start from step_1880_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1880_optimized_shape.ply
+=== Time step 1890 ===
+  → conservative bounds: min=0.0005, max=1.6996
+    iter 0: warm‐start from step_1890_iter_00_displacement.npy
+    iter 1: warm‐start from step_1890_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1890_optimized_shape.ply
+=== Time step 1900 ===
+  → conservative bounds: min=0.0001, max=1.6998
+    iter 0: warm‐start from step_1900_iter_00_displacement.npy
+    iter 1: warm‐start from step_1900_iter_01_displacement.npy
+    iter 2: warm‐start from step_1900_iter_02_displacement.npy
+    iter 3: warm‐start from step_1900_iter_03_displacement.npy
+    iter 4: grad‐step ‖Δx‖=5.803e-02
+    iter 5: grad‐step ‖Δx‖=2.533e-02
+    iter 6: grad‐step ‖Δx‖=1.512e-02
+    iter 7: grad‐step ‖Δx‖=1.568e-02
+    iter 8: grad‐step ‖Δx‖=1.054e-02
+    iter 9: grad‐step ‖Δx‖=7.731e-03
+    iter 10: grad‐step ‖Δx‖=9.611e-03
+    iter 11: grad‐step ‖Δx‖=6.951e-03
+    iter 12: grad‐step ‖Δx‖=5.553e-03
+    iter 13: grad‐step ‖Δx‖=3.692e-03
+    iter 14: grad‐step ‖Δx‖=7.740e-03
+    iter 15: grad‐step ‖Δx‖=4.733e-03
+    iter 16: grad‐step ‖Δx‖=3.963e-03
+    iter 17: grad‐step ‖Δx‖=2.801e-03
+    iter 18: grad‐step ‖Δx‖=2.871e-03
+    iter 19: grad‐step ‖Δx‖=3.624e-03
+  reached max iterations (20)
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1900_optimized_shape.ply
+=== Time step 1910 ===
+  → conservative bounds: min=0.0005, max=1.7001
+    iter 0: warm‐start from step_1910_iter_00_displacement.npy
+    iter 1: warm‐start from step_1910_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1910_optimized_shape.ply
+=== Time step 1920 ===
+  → conservative bounds: min=0.0038, max=1.6999
+    iter 0: warm‐start from step_1920_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1920_optimized_shape.ply
+=== Time step 1930 ===
+  → conservative bounds: min=0.0010, max=1.6994
+    iter 0: warm‐start from step_1930_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1930_optimized_shape.ply
+=== Time step 1940 ===
+  → conservative bounds: min=0.0002, max=1.6991
+    iter 0: warm‐start from step_1940_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1940_optimized_shape.ply
+=== Time step 1950 ===
+  → conservative bounds: min=0.0006, max=1.6993
+    iter 0: warm‐start from step_1950_iter_00_displacement.npy
+    iter 1: warm‐start from step_1950_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1950_optimized_shape.ply
+=== Time step 1960 ===
+  → conservative bounds: min=0.0037, max=1.6998
+    iter 0: warm‐start from step_1960_iter_00_displacement.npy
+    iter 0: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1960_optimized_shape.ply
+=== Time step 1970 ===
+  → conservative bounds: min=0.0006, max=1.6999
+    iter 0: warm‐start from step_1970_iter_00_displacement.npy
+    iter 1: warm‐start from step_1970_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1970_optimized_shape.ply
+=== Time step 1980 ===
+  → conservative bounds: min=0.0022, max=1.7003
+    iter 0: warm‐start from step_1980_iter_00_displacement.npy
+    iter 1: warm‐start from step_1980_iter_01_displacement.npy
+    iter 1: no collisions → converged
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/step_1980_optimized_shape.ply
+=== Time step 1990 ===
+  → conservative bounds: min=0.0001, max=1.7000
+    iter 0: warm‐start from step_1990_iter_00_displacement.npy
+    iter 1: warm‐start from step_1990_iter_01_displacement.npy
+    iter 2: warm‐start from step_1990_iter_02_displacement.npy
+    iter 3: warm‐start from step_1990_iter_03_displacement.npy
+    iter 4: grad‐step ‖Δx‖=5.819e-02
+    iter 5: grad‐step ‖Δx‖=2.797e-02
+    iter 6: grad‐step ‖Δx‖=1.526e-02
+    iter 7: grad‐step ‖Δx‖=8.620e-03
+    iter 8: grad‐step ‖Δx‖=1.571e-02
+    iter 9: grad‐step ‖Δx‖=8.733e-03
+    iter 10: grad‐step ‖Δx‖=6.372e-03
+    iter 11: grad‐step ‖Δx‖=4.395e-03
+    iter 12: grad‐step ‖Δx‖=8.355e-03
+    iter 13: grad‐step ‖Δx‖=5.612e-03
+    iter 14: grad‐step ‖Δx‖=4.407e-03
+    iter 15: grad‐step ‖Δx‖=3.205e-03
+    iter 16: grad‐step ‖Δx‖=3.062e-03
+    iter 17: grad‐step ‖Δx‖=3.997e-03
+    iter 18: grad‐step ‖Δx‖=3.008e-03
+    iter 19: grad‐step ‖Δx‖=2.775e-03
+  reached max iterations (20)
+→ Wrote /home/matthew/Downloads/Penetration-Free-Deformation-Project-main/Submissions/Matthew/P02_DeformationTruncation/./Data2/ste
