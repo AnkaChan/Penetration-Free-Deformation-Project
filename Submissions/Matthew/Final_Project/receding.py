@@ -25,9 +25,21 @@ mesh_pre_init.show()
 
 @wp.func
 def vertex_moving_away_from_vertex(v: wp.vec3, u: wp.vec3, d: wp.vec3):
+  """
+    # Check if the vertex v is moving away from vertex u in the direction of d
   dir = wp.normalize(u - v)
   d = wp.normalize(d)
   return wp.dot(dir, d) > 0
+  """
+    # This checks if the vertex v is moving away from vertex u in the direction of d
+    # by checking if the dot product of (u - v) and d is positive
+    # This is equivalent to checking if the angle between (u - v) and d is
+    # acute (i.e., less than 90 degrees).
+    # If the dot product is positive, then the vertex is moving away from u.
+    # This is a more efficient way to check if the vertex is moving away from u
+    # without having to normalize the vectors.
+  # acute‐angle ⇔ dot((u−v), d) > 0
+  return wp.dot(u - v, d) > 0
 
 # For a simple version, we can say that a vertex is moving away from a triangle if it moves away from all of the triangle's corners
 @wp.func
