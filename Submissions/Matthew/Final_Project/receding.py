@@ -88,43 +88,6 @@ def dist_from_edge_to_edge(v1: wp.vec3, v2: wp.vec3, u1: wp.vec3, u2: wp.vec3):
     return wp.sqrt(wp.dot(diff, diff))
 
 @wp.func
-def dist_point_triangle_sq_fast(
-    p: wp.vec3,
-    a: wp.vec3,
-    b: wp.vec3,
-    c: wp.vec3
-) -> float:
-    # precomputed per-triangle (hoist these out if static)
-    ab = b - a
-    ac = c - a
-    n  = wp.cross(ab, ac)
-    n2 = wp.dot(n, n) + 1e-12  # avoid zero
-
-    # signed distance² to plane (skip sqrt)
-    pd     = wp.dot(p - a, n)
-    sq_plane = (pd * pd) / n2
-
-    # half‐space tests to see if proj lies inside (cross-edge normals)
-    if (wp.dot(wp.cross(ab,  n), p - a) >= 0.0 and
-        wp.dot(wp.cross(c - b, n), p - b) >= 0.0 and
-        wp.dot(wp.cross(a - c, n), p - c) >= 0.0):
-        return sq_plane
-
-    # 3) else min of three point–segment sq distances
-    def pt_seg_sq(p, x, y):
-        d = y - x
-        d2 = wp.dot(d, d) + 1e-12
-        t  = wp.dot(p - x, d) / d2
-        t  = wp.min(1.0, wp.max(0.0, t))
-        q  = x + d * t
-        r  = p - q
-        return wp.dot(r, r)
-    ds0 = pt_seg_sq(p, a, b)
-    ds1 = pt_seg_sq(p, b, c)
-    ds2 = pt_seg_sq(p, c, a)
-    return wp.min(ds0, wp.min(ds1, ds2))
-
-@wp.func
 def dist_point_triangle(p: wp.vec3, a: wp.vec3, b: wp.vec3, c: wp.vec3) -> float:
     #
     # Compute the (unnormalized) face normal and its squared length
