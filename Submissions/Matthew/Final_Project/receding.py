@@ -79,9 +79,59 @@ def dist_from_edge_to_edge(v1: wp.vec3, v2: wp.vec3, u1: wp.vec3, u2: wp.vec3):
 @wp.func
 def exclude_vertex_triangle_pair(v:wp.vec3, u1:wp.vec3, u2:wp.vec3, u3:wp.vec3, d:wp.vec3, d1:wp.vec3, d2:wp.vec3, d3:wp.vec3):
   return vertex_moving_away_from_triangle(v, u1, u2, u3, d) and triangle_moving_away_from_vertex(v, u1, u2, u3, d1, d2, d3)
+
 @wp.func
 def exclude_edge_edge_pair(v1:wp.vec3, v2:wp.vec3, u1:wp.vec3, u2:wp.vec3, dv1:wp.vec3, dv2:wp.vec3, du1:wp.vec3, du2: wp.vec3):
-  return 0 # STILL REQUIRES IMPLEMENTATION
+    # Static segment directions & offset
+    u = v2 - v1
+    v = u2 - u1
+    w = v1 - u1
+
+    # Dot products for the quadratic form
+    a = wp.dot(u, u)
+    b = wp.dot(u, v)
+    c = wp.dot(v, v)
+    d = wp.dot(u, w)
+    e = wp.dot(v, w)
+
+    denom = a*c - b*b
+
+    # Solve for s parameter on [0,1]
+    s = 0.0
+    if denom > 1e-8:
+        s = (b*e - c*d) / denom
+        s = wp.min(1.0, wp.max(0.0, s))
+
+    # Solve for t parameter on [0,1]
+    t = 0.0
+    if c > 1e-8:
+        t = (b*s + e) / c
+        t = wp.min(1.0, wp.max(0.0, t))
+
+    # Refine s against this t
+    if a > 1e-8:
+        s = (b*t - d) / a
+        s = wp.min(1.0, wp.max(0.0, s))
+
+    # Compute the closest points on each segment
+    pc = v1 + u * s
+    qc = u1 + v * t
+    delta = pc - qc
+
+    # If segments are effectively touching, we can’t exclude
+    dist2 = wp.dot(delta, delta)
+    if dist2 < 1e-12:
+        return False
+
+    # Unit separation axis
+    dhat = delta * wp.rsqrt(dist2)
+
+    # Interpolate velocities at closest points
+    velA = dv1 * (1.0 - s) + dv2 * s
+    velB = du1 * (1.0 - t) + du2 * t
+
+    # If relative velocity along dhat is positive, edges are separating
+    return wp.dot(velA - velB, dhat) > 0.0
 
 # compute d^E_{min,v} using a kernel that allows looping over edge-edge pairs
 @wp.kernel
