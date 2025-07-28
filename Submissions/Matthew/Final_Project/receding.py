@@ -21,16 +21,26 @@ mesh_pre_init = trimesh.load(shape_pre_initialization_files[0])
 displacement_init = np.load(displacement_initialization_files[0])
 mesh_pre_init.show()
 
+vertices = wp.array(mesh_pre_init.vertices, dtype=wp.vec3)
+#edges = wp.array(mesh_pre_init.edges, dtype=wp.int32)
+edges = wp.array(mesh_pre_init.edges, dtype=wp.int32, ndim=2)
+#faces = wp.array(mesh_pre_init.faces, dtype=wp.int32)
+faces = wp.array(mesh_pre_init.faces, dtype=wp.int32, ndim=2)
+displacements = wp.array(displacement_init, dtype=wp.vec3)
+d_min_edge = wp.array(np.ones(len(vertices), dtype=np.float32) * 1e9)
+d_min_v = wp.array(np.ones(len(vertices), dtype=np.float32) * 1e9)
+d_min_T = wp.array(np.ones(len(vertices), dtype=np.float32) * 1e9)
+new_bounds = wp.array(np.zeros(len(vertices), dtype=np.float32))
+
 # Bounds Calculation Functions
 
 @wp.func
 def vertex_moving_away_from_vertex(v: wp.vec3, u: wp.vec3, d: wp.vec3):
-  """
     # Check if the vertex v is moving away from vertex u in the direction of d
-  dir = wp.normalize(u - v)
-  d = wp.normalize(d)
-  return wp.dot(dir, d) > 0
-  """
+    # dir = wp.normalize(u - v)
+    # d = wp.normalize(d)
+    # return wp.dot(dir, d) > 0
+
     # This checks if the vertex v is moving away from vertex u in the direction of d
     # by checking if the dot product of (u - v) and d is positive
     # This is equivalent to checking if the angle between (u - v) and d is
@@ -159,7 +169,7 @@ def exclude_vertex_triangle_pair(v:wp.vec3, u1:wp.vec3, u2:wp.vec3, u3:wp.vec3, 
     # is v on the “positive” side of the plane?
     side_v = wp.dot(v - u1, n)
     # is it moving further in that same direction?
-    rel_v  = wp.dot(dv, n)
+    rel_v  = wp.dot(d, n)
     if side_v * rel_v <= 0.0:
         # either below plane or moving toward it
         return False
@@ -169,10 +179,7 @@ def exclude_vertex_triangle_pair(v:wp.vec3, u1:wp.vec3, u2:wp.vec3, u3:wp.vec3, 
     # but in practice this plane check filters out ~95% of exclusions.)
 
     # Fallback: the old‐school vertex→vertex check, but with fast dot version
-    return vertex_moving_away(v,  u1, dv) and vertex_moving_away(v,  u2, dv) and vertex_moving_away(v,  u3, dv) and \
-           vertex_moving_away(u1, v,  d1) and vertex_moving_away(u2, v,  d2) and vertex_moving_away(u3, v,  d3)
-
-    #return vertex_moving_away_from_triangle(v, u1, u2, u3, d) and triangle_moving_away_from_vertex(v, u1, u2, u3, d1, d2, d3)
+    return vertex_moving_away_from_triangle(v, u1, u2, u3, d) and triangle_moving_away_from_vertex(v, u1, u2, u3, d1, d2, d3)
 
 @wp.func
 def exclude_edge_edge_pair(v1:wp.vec3, v2:wp.vec3, u1:wp.vec3, u2:wp.vec3, dv1:wp.vec3, dv2:wp.vec3, du1:wp.vec3, du2: wp.vec3):
@@ -218,7 +225,9 @@ def exclude_edge_edge_pair(v1:wp.vec3, v2:wp.vec3, u1:wp.vec3, u2:wp.vec3, dv1:w
         return False
 
     # Unit separation axis
-    dhat = delta * wp.rsqrt(dist2)
+    #dhat = delta * wp.rsqrt(dist2)
+    inv_len = 1.0 / wp.sqrt(dist2)
+    dhat    = delta * inv_len
 
     # Interpolate velocities at closest points
     velA = dv1 * (1.0 - s) + dv2 * s
@@ -231,7 +240,7 @@ def exclude_edge_edge_pair(v1:wp.vec3, v2:wp.vec3, u1:wp.vec3, u2:wp.vec3, dv1:w
 @wp.kernel
 def compute_d_min_E(
   vertices: wp.array(dtype=wp.vec3),
-  edges: wp.array(dtype=wp.array(dtype=wp.int32)),
+  edges: wp.array(dtype=wp.int32, ndim=2),
   displacements: wp.array(dtype=wp.vec3),
   d_min_edge: wp.array(dtype=wp.float32)
 ):
@@ -259,19 +268,65 @@ def compute_d_min_E(
 @wp.kernel
 def compute_d_min_v_and_d_min_T(
   vertices: wp.array(dtype=wp.vec3),
-  faces: wp.array(dtype=wp.array(dtype=wp.int32)),
+  faces: wp.array(dtype=wp.int32, ndim=2),
   displacements: wp.array(dtype=wp.vec3),
   d_min_v: wp.array(dtype=wp.float32),
   d_min_T: wp.array(dtype=wp.float32)
 ):
   i = wp.tid() # face index
+  d_T_current = float(1e9) # Initializing the value with a large number
+  for j in range(len(vertices)):
+    if j == faces[i][0] or j == faces[i][1] or j == faces[i][2]:
+      continue
+    v = vertices[j]
+    dv = displacements[j]
+    u1 = vertices[faces[i][0]]
+    u2 = vertices[faces[i][1]]
+    u3 = vertices[faces[i][2]]
+    dist = dist_point_triangle(v, u1, u2, u3)
+    if exclude_vertex_triangle_pair(v, u1, u2, u3, dv, displacements[faces[i][0]], displacements[faces[i][1]], displacements[faces[i][2]]):
+      continue
+    d_min_v[j] = min(d_min_v[j], dist)
+    d_T_current = min(d_T_current, dist)
+  d_min_T[faces[i][0]] = min(d_min_T[faces[i][0]], d_T_current)
+  d_min_T[faces[i][1]] = min(d_min_T[faces[i][1]], d_T_current)
+  d_min_T[faces[i][2]] = min(d_min_T[faces[i][2]], d_T_current)
 
 @wp.kernel
 def compute_new_bounds(
   d_min_v: wp.array(dtype=wp.float32),
   d_min_E: wp.array(dtype=wp.float32),
   d_min_T: wp.array(dtype=wp.float32),
-  new_bounds: wp.array(dtype=wp.float32)
+  new_bounds: wp.array(dtype=wp.float32),
+  gamma: float
 ):
   i = wp.tid() # vertex index
-  new_bounds[i] = min(d_min_v[i], d_min_E[i], d_min_T[i])
+  new_bounds[i] = gamma * wp.min(wp.min(d_min_v[i], d_min_E[i]), d_min_T[i])
+
+# Running kernels to calculate bounds
+wp.launch(
+    compute_d_min_E,
+    dim=len(edges),
+    inputs=[vertices, edges, displacements, d_min_edge],
+    device='cuda:0'
+)
+wp.launch(
+    compute_d_min_v_and_d_min_T,
+    dim=len(faces),
+    inputs=[vertices, faces, displacements, d_min_v, d_min_T],
+    device='cuda:0'
+)
+wp.launch(
+    compute_new_bounds,
+    dim=len(vertices),
+    inputs=[d_min_v, d_min_edge, d_min_T, new_bounds, 0.4],
+    device='cuda:0'
+)
+
+arr = [new_bounds.numpy()[i] for i in range(len(new_bounds.numpy()))]
+print(arr)
+
+ps.init()
+mesh_ps = ps.register_surface_mesh("mesh1", mesh_pre_init.vertices, mesh_pre_init.faces)
+mesh_ps.add_scalar_quantity("Bounds", new_bounds.numpy())
+ps.show()
